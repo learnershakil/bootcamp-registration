@@ -63,8 +63,8 @@ const RegistrationForm = ({ setPopUp }) => {
       toast.error("Phone number should be at least 10 characters");
       return false;
     }
-    if (!formData.videoUrl) {
-      toast.error("Video URL is required");
+    if (!formData.reg) {
+      toast.error("Registration no. is required");
       return false;
     }
     if (!formData.discord || formData.discord.length < 2) {
@@ -83,7 +83,7 @@ const RegistrationForm = ({ setPopUp }) => {
 
     try {
       const response = await axios.post(
-        "https://client-test-one.vercel.app/register",
+        "https://dev.learnersarc.com:3000/api/register",
         formData
       );
       toast.success(response.data.message);
@@ -96,7 +96,7 @@ const RegistrationForm = ({ setPopUp }) => {
         course: "",
         year: "",
         phone: "",
-        videoUrl: "",
+        reg: "",
         discord: "",
       });
     } catch (error) {
@@ -258,7 +258,7 @@ const RegistrationForm = ({ setPopUp }) => {
               </label>
               <input
                 type="text"
-                name="Reg"
+                name="reg"
                 placeholder="What's your University Registration no.?"
                 value={formData.reg}
                 onChange={handleChange}
