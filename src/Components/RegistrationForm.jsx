@@ -257,7 +257,7 @@ const RegistrationForm = ({ setPopUp }) => {
                 </div>
               </label>
               <input
-                type="number"
+                type="text"
                 name="Reg"
                 placeholder="What's your University Registration no.?"
                 value={formData.reg}
