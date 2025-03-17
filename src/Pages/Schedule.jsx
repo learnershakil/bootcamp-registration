@@ -50,7 +50,7 @@ const Schedule = () => {
   const scheduleData = [
     {
       date: "18 March",
-      day: 15,
+      day: 1,
       events: [
         { time: "5:15PM - 6PM", title: "Orientation" },
         { time: "6PM - 7PM", title: "HTML" },
@@ -58,7 +58,7 @@ const Schedule = () => {
     },
     {
       date: "19 March",
-      day: 14,
+      day: 2,
       events: [
         { time: "5:15PM - 6PM", title: "Deep Dive CSS & Project" },
         { time: "6PM - 7PM", title: "Tailwind-CSS" },
@@ -66,7 +66,7 @@ const Schedule = () => {
     },
     {
       date: "20 March",
-      day: 13,
+      day: 3,
       events: [
         { time: "5:15PM - 6PM", title: "Tailwind-CSS Project" },
         { time: "6PM - 7PM", title: "JS Foundation" },
@@ -74,7 +74,7 @@ const Schedule = () => {
     },
     {
       date: "21 March (Friday)",
-      day: 12,
+      day: 4,
       events: [
         { time: "10AM - 12PM", title: "JS - Intermediate" },
         { time: "12PM - 1PM", title: "Lunch" },
@@ -87,7 +87,7 @@ const Schedule = () => {
     },
     {
       date: "22 March",
-      day: 11,
+      day: 5,
       events: [
         { time: "10AM - 12PM", title: "Linux" },
         { time: "12PM - 1PM", title: "Lunch" },
@@ -100,12 +100,12 @@ const Schedule = () => {
     },
     {
       date: "23 March",
-      day: 10,
+      day: 6,
       events: [{ time: "HW", title: "Bun, HTTP server from http module, and explore 5 packages" }],
     },
     {
       date: "24 March",
-      day: 9,
+      day: 7,
       events: [
         { time: "5:15PM - 6PM", title: "Auth" },
         { time: "6PM - 7PM", title: "Project" },
@@ -121,17 +121,17 @@ const Schedule = () => {
     },
     {
       date: "26 March",
-      day: 7,
+      day: 9,
       events: [{ time: "5PM - 7PM", title: "React Foundation" }],
     },
     {
       date: "27 March",
-      day: 6,
+      day: 10,
       events: [{ time: "5PM - 7PM", title: "React Intermediate" }],
     },
     {
       date: "28 March (Friday)",
-      day: 5,
+      day: 11,
       events: [
         { time: "10AM - 12PM", title: "React Advance" },
         { time: "12PM - 1PM", title: "Lunch" },
@@ -142,7 +142,7 @@ const Schedule = () => {
     },
     {
       date: "29 March",
-      day: 4,
+      day: 12,
       events: [
         { time: "10AM - 12PM", title: "Websockets" },
         { time: "12PM - 1PM", title: "Lunch" },
@@ -153,22 +153,22 @@ const Schedule = () => {
     },
     {
       date: "30 March",
-      day: 3,
+      day: 13,
       events: [{ time: "HW", title: "Build chatting App by Own" }],
     },
     {
       date: "31 March",
-      day: 2,
+      day: 14,
       events: [{ time: "5:15PM - 7PM", title: "React-Native" }],
     },
     {
       date: "1 April",
-      day: 1,
+      day: 15,
       events: [{ time: "5:15PM - 7PM", title: "Project: React-Native AI Powered App" }],
     },
   ];
 
-  const currentDate = new Date("2025-03-16"); // Today: 16 March 2025
+  const currentDate = new Date("2025-03-16"); 
   const isCurrentDay = (date) => {
     const dayDate = new Date(`2025-${date.split(" ")[1]}-${date.split(" ")[0]}`);
     return (
