@@ -83,7 +83,7 @@ const RegistrationForm = ({ setPopUp }) => {
 
     try {
       const response = await axios.post(
-        "https://dev.learnersarc.com:3000/api/register",
+        "https://woc-api.onrender.com/register",
         formData
       );
       toast.success(response.data.message);
