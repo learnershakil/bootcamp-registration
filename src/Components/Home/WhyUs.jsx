@@ -129,7 +129,7 @@ const WhyUs = ({ setPopUp }) => {
   return (
     <div className="w-full sm:min-h-[57vw] min-h-[120vw] bg-gradient-to-b from-black to-zinc-900 overflow-hidden">
       <div className="w-full h-[30vw] relative bottom-[4vw]">
-        <h1 className="why-us-title sm:text-[7vw] text-[12vw] w-full text-center py-[9vw] font-bold">
+        <h1 className="why-us-title sm:text-[7vw] text-[8vw] w-full text-center py-[9vw] font-bold">
           Why Learner&apos;s Arc?
         </h1>
         <div className="w-full absolute sm:top-[20vw] top-[26vw] text-center mt-[1.5vw]">

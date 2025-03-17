@@ -1,4 +1,3 @@
-import Nav from "../Components/Home/Nav";
 import Stats from "../Components/Home/Stats";
 import Hero from "../Components/Home/Hero";
 import WhyUs from "../Components/Home/WhyUs";
@@ -12,13 +11,12 @@ const Home = () => {
   const [popUp, setPopUp] = useState(false);
   return (
     <div className={`w-full overflow-hidden ${popUp ? "h-screen" : ""}`}>
-      <Nav />
       <div className="py-2">
-      <Hero setPopUp={setPopUp} />
+        <Hero setPopUp={setPopUp} />
       </div>
       <Stats setPopUp={setPopUp} />
       <WhyUs setPopUp={setPopUp} />
-      <Show/>
+      <Show />
       <Faq />
       <Footer setPopUp={setPopUp} />
 
